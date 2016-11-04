@@ -30,7 +30,7 @@ angular.module('pokemonApp', ['ui.router'])
       url: '/gen4/',
       templateUrl: './views/gen4.html',
       controller: 'gen4Ctrl'
-    })
+    });
     $urlRouterProvider
     .otherwise('/');
 

@@ -13,11 +13,9 @@
 </div>
       <div  ng-repeat = 'data in datas'>
 
-<<<<<<< HEAD
+
         <div ui-sref ='info({id: data.name})' ng-click="getIndividual($index + 1)">
-=======
-        <div ng-controller = 'infoCtrl' ui-sref ='info({id: data.name})' ng-click="getIndividual($index + 1, data.name)">
->>>>>>> 9e59bf4b6d85b7487ab381fbd3772fe5c024d54e
+
           <div class = 'wrapper'>
           <img ng-src = '{{data.img}}'></img>
           </div>

@@ -31,7 +31,6 @@ angular.module('pokemonApp').service('mainService', function($http) {
 };
 
 
-<<<<<<< HEAD
 this.gen1 = function() {
   return $http({
     method: 'GET',
@@ -141,9 +140,7 @@ this.gen4 = function() {
   return pokemon;
   });
 };
-=======
 
->>>>>>> 9e59bf4b6d85b7487ab381fbd3772fe5c024d54e
 
 
   this.getIndividual = function(id) {
@@ -154,27 +151,12 @@ this.gen4 = function() {
     }).then(function(response) {
       var newResponse = [];
       var data = response.data;
-<<<<<<< HEAD
+
       data.img = 'http://www.serebii.net/art/th/' + data.id + '.png';
       newResponse.push(data);
 
       return newResponse[0];
-=======
-      data.img = 'http://www.serebii.net/art/th/' + id + '.png';
-      newResponse.push({data: data});
 
-      // for(var i = 0; i < data.length; i++) {
-      //   while(i < 150) {
-      //     var id = (i+1);
-      //     newResponse.push({
-      //       img: 'http://www.serebii.net/art/th/' + id + '.png',
-      //
-      //     }, data);
-      //     console.log(newResponse, "this is newResponse");
-      //   }
-      // }
-      return newResponse;
->>>>>>> 9e59bf4b6d85b7487ab381fbd3772fe5c024d54e
     });
   };
 
