@@ -13,6 +13,7 @@ angular.module('pokemonApp').controller('infoCtrl', function($scope, mainService
       });
 
   };
+<<<<<<< HEAD
   // console.log("stateparams", $stateParams);
 
   $scope.getNext = function(id) {
@@ -27,6 +28,9 @@ angular.module('pokemonApp').controller('infoCtrl', function($scope, mainService
   };
 
   $scope.getIndividual($stateParams.id);
+=======
+
+>>>>>>> 9e59bf4b6d85b7487ab381fbd3772fe5c024d54e
 });
 
 
