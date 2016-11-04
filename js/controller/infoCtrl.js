@@ -13,4 +13,5 @@ angular.module('pokemonApp').controller('infoCtrl', function($scope, mainService
         $state.go('info');
       });
   };
+
 });

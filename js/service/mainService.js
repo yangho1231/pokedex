@@ -1,3 +1,4 @@
+
 angular.module('pokemonApp').service('mainService', function($http) {
 
 
@@ -6,7 +7,7 @@ angular.module('pokemonApp').service('mainService', function($http) {
       method: 'GET',
       url: 'http://pokeapi.co/api/v2/pokemon/?limit=151'
   }).then(function(response) {
-    // console.log(response);
+    // console.log(pokemon);
     var data = response.data.results;
     var pokemon = [];
     for(var i = 0; i < data.length; i++) {
@@ -17,7 +18,8 @@ angular.module('pokemonApp').service('mainService', function($http) {
           name: name,
             id: '#' + id,
             img: 'http://www.serebii.net/art/th/' + id + '.png',
-            url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
+            url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/',
+
           });
 
       }
@@ -28,6 +30,10 @@ angular.module('pokemonApp').service('mainService', function($http) {
   });
 };
 
+
+
+
+
   this.getIndividual = function(id) {
     // console.log(parseInt(id));
       return $http({
@@ -36,8 +42,8 @@ angular.module('pokemonApp').service('mainService', function($http) {
     }).then(function(response) {
       var newResponse = [];
       var data = response.data;
-
-
+      data.img = 'http://www.serebii.net/art/th/' + id + '.png';
+      newResponse.push({data: data});
 
       // for(var i = 0; i < data.length; i++) {
       //   while(i < 150) {
@@ -49,7 +55,7 @@ angular.module('pokemonApp').service('mainService', function($http) {
       //     console.log(newResponse, "this is newResponse");
       //   }
       // }
-      return data;
+      return newResponse;
     });
   };
 
