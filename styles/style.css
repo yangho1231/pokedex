@@ -1,0 +1,18 @@
+.home-page-top-container {
+  background-image: url('../img/background.png');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.intro-text {
+  text-align: center;
+}
+.dropdown_menu {
+  height: 200px;
+  width: 15vw;
+  border: 1px solid black;
+
+  position: fixed;
+
+}
