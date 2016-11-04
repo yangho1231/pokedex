@@ -8,12 +8,14 @@
     <!-- <link rel = 'stylesheet' href = 'styles/reset.css'> -->
     <link rel = 'stylesheet' href = 'styles/style.css'>
     <link rel = 'stylesheet' href = 'styles/home.css'>
+    <link rel = 'stylesheet' href = 'styles/info.css'>
 
     <title></title>
   </head>
   <body>
   <main role='main'>
-    <section class = 'home-page-top-container'>
+
+      <section class = 'home-page-top-container'>
       <header>
         <nav>
           <ul>
@@ -30,9 +32,10 @@
               <div class = "collapse navbar-collapse" id = "togglemenu">
                 <ul class = "nav navbar-nav navbar-right">
                   <li><a ui-sref = "home">Home</a></li>
-                  <!-- <li><a href = "#aboutme">About Me</a></li>
-                  <li><a href = "#projects">Projects</a></li>
-                  <li><a href = "#contacts">Contacts</a></li> -->
+                  <li><a ui-sref = "gen1">Gen 1</a></li>
+                  <li><a ui-sref = "gen2">Gen 2</a></li>
+                  <li><a ui-sref = "gen3">Gen 3</a></li>
+                  <li><a ui-sref = 'gen4'>Gen 4</a></li>
                 </ul>
               </div>
             </div>
@@ -66,6 +69,10 @@
   <script src = "js/app.js"></script>
   <script src = 'js/controller/mainCtrl.js'></script>
   <script src = 'js/controller/infoCtrl.js'></script>
+  <script src = 'js/controller/gen1.js'></script>
+  <script src = 'js/controller/gen2.js'></script>
+  <script src = 'js/controller/gen3.js'></script>
+  <script src = 'js/controller/gen4.js'></script>
   <script src = 'js/service/mainService.js'></script>
 
 

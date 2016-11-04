@@ -1,0 +1,28 @@
+.infoPage {
+  display: inline-block;
+  heigth: 800px;
+  position: relative;
+  text-align: center;
+
+}
+.dropdown_menu {
+  display: none;
+}
+.previous {
+  float: left;
+  display: block;
+  border-radius: 20px;
+  width: 200px;
+}
+.next {
+  float: right;
+  display: block;
+  border-radius: 20px;
+  width: 200px;
+
+}
+.test {
+  height: 300px;
+  width: 200px;
+}
+.collapse

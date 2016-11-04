@@ -12,7 +12,10 @@
   height: 200px;
   width: 15vw;
   border: 1px solid black;
-
   position: fixed;
 
+
 }
+/*.nav.navbar-nav.navbar-left {
+  margin-right: 50px;
+}*/
