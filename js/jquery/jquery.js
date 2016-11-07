@@ -1,9 +1,6 @@
 // $(document).ready(function(){
-//   $(this).live('mouseenter', function() {
+//   $(this).on('mouseover', function() {
 //     console.log(document);
-//     $('img.test').css('background-color', 'black');
-//   });
-//   $(this).on('mouseleave', function() {
-//     $('img.test').css('background-color', 'white');
+//     $('.text').css('background-color', 'black');
 //   });
 // });

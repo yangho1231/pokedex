@@ -1,4 +1,4 @@
-angular.module('pokemonApp', ['ui.router'])
+angular.module('pokemonApp', ['ui.router', 'ngRoute'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('home', {
@@ -8,7 +8,7 @@ angular.module('pokemonApp', ['ui.router'])
     })
     .state('info', {
       url: '/info/:id',
-      templateUrl: './views/info.html',
+      templateUrl: './views/info2.html',
       controller: 'infoCtrl'
     })
     .state('gen1', {

@@ -16,7 +16,7 @@ section.home-main {
 }
 
 .search-box {
-  
+
   margin-top: 10px;
 }
 
@@ -33,4 +33,11 @@ input.search-box {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.img-list{
+  height: 180px;
+  width: 200px;
+}
+.img-list:hover{
+  zoom: 150%;
 }

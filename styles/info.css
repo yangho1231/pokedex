@@ -1,53 +1,74 @@
-.bo {
-  margin: 0;
-}
 .infoPage {
   display: inline-block;
   width: 100vw;
-  background-image: url('../img/infoBackground.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+  background: url(../img/infoBackground.png) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
   text-align: center;
-  padding-bottom: 10px;
-
 }
 .dropdown_menu {
   display: none;
 }
 .previous {
   float: left;
-  display: block;
+
   border-radius: 20px;
   width: 200px;
 }
 .next {
   float: right;
-  display: block;
+
   border-radius: 20px;
   width: 200px;
 }
-.test {
-  heigth: 300px;
-  width: 300px;
-  display: inline-block;
-
+.wrapTwo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 900px;
+  align-items: center;
 }
+
+
+.test {
+  position: relative;
+  animation: bounce 1s 80;
+
+  /*animation: bounce 5s infinite;*/
+}
+
 .infoBox {
   font-size: 30px;
   border-radius: 30px;
   width: 600px;
   background-color: #30A7D7;
   color: black;
-  display: inline-block;
-  position: relative;
-  bottom: -50px;
-  height 350px;
+  height 300px;
+
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 5px;
+  }
+  25% 75% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 .property {
   color: white;
 }
 .infoName{
   text-align: left;
+}
+.value {
+
 }

@@ -1,11 +1,23 @@
-angular.module('pokemonApp').controller('mainCtrl', function($scope, mainService, $stateParams, $state) {
+angular.module('pokemonApp').controller('mainCtrl', function($scope, mainService, $stateParams, $state, $route, $anchorScroll, $location) {
   $scope.getUsers = function() {
     mainService.getData().then(function(response) {
       console.log(response);
       $scope.pokemon = response;
     });
   };
+  $scope.reloadRoute = function(id) {
+      // console.log('hit');
+      if($state.current.name === 'home') {
+        $location.hash(id);
+        $anchorScroll();
+      }
+      else {
+        $state.go('home');
+      }
+  };
+
   $scope.getUsers();
+
 
 
 

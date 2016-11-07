@@ -12,12 +12,15 @@ angular.module('pokemonApp').service('mainService', function($http) {
     var pokemon = [];
     for(var i = 0; i < data.length; i++) {
       if(i < 720) {
-        var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
         var id = (i+1);
+        var str = id.toString();
+        var ans = ('000'+str).substring(str.length);
+        var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
+
         pokemon.push({
           name: name,
             id:  id,
-            img: 'http://www.serebii.net/art/th/' + id + '.png',
+            img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
             url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/',
 
           });
@@ -43,13 +46,16 @@ this.gen1 = function() {
 
   for(var i = 0; i < data.length; i++) {
     if(i < 152) {
-
-      var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
       var id = (i+1);
+      var str = id.toString();
+      var ans = ('000'+str).substring(str.length);
+      var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
+
+
       pokemon.push({
         name: name,
           id: id,
-          img: 'http://www.serebii.net/art/th/' + id + '.png',
+          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -74,10 +80,12 @@ this.gen2 = function() {
 
       var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
       var id = (i+152);
+      var str = id.toString();
+      var ans = ('000'+str).substring(str.length);
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://www.serebii.net/art/th/' + id + '.png',
+          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -101,10 +109,12 @@ this.gen3 = function() {
 
       var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
       var id = (i+252);
+      var str = id.toString();
+      var ans = ('000'+str).substring(str.length);
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://www.serebii.net/art/th/' + id + '.png',
+          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -129,10 +139,12 @@ this.gen4 = function() {
 
       var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
       var id = (i+387);
+      var str = id.toString();
+      var ans = ('000'+str).substring(str.length);
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://www.serebii.net/art/th/' + id + '.png',
+          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -156,10 +168,12 @@ this.gen5 = function() {
 
       var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
       var id = (i+494);
+      var str = id.toString();
+      var ans = ('000'+str).substring(str.length);
       pokemon.push({
         name: name,
           id: id,
-          img: 'http://www.serebii.net/art/th/' + id + '.png',
+          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -183,10 +197,12 @@ this.gen6 = function() {
 
       var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
       var id = (i+650);
+      var str = id.toString();
+      var ans = ('000'+str).substring(str.length);
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://www.serebii.net/art/th/' + id + '.png',
+          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
