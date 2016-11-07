@@ -2,7 +2,7 @@ angular.module('pokemonApp').controller('mainCtrl', function($scope, mainService
   $scope.getUsers = function() {
     mainService.getData().then(function(response) {
       // console.log(response);
-      $scope.datas = response;
+      $scope.pokemon = response;
     });
   };
   $scope.getUsers();

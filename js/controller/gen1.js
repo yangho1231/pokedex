@@ -1,7 +1,7 @@
 angular.module('pokemonApp').controller('gen1Ctrl', function($scope, mainService, $stateParams, $state) {
   $scope.gen1 = function() {
     mainService.gen1().then(function(response) {
-      console.log(response);
+      // console.log(response);
       $scope.pokemon = response;
     });
   };

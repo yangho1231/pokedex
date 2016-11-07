@@ -1,11 +1,21 @@
 <!-- <div ng-repeat = 'pokemon in singlePokemon'>{{poke.name}}</div> -->
 
 <div class = 'infoPage'>
+  <button class = "previous"ng-disabled = 'poke.id === 1' ng-click = 'getPrev(poke.id)' ui-sref = 'info({id: poke.id -1})'>Previous</button>
 
-Name: {{poke.name}}
-Height:{{poke.height}}
-Type: {{poke.types[0].type.name}} {{poke.types[1].type.name}}
-<img class = 'test' ng-src = "{{poke.img}}"></img>
+  <button class = "next"  ui-sref = 'info({id: poke.id + 1})'>next</button>
+
+  <img class = 'test' ng-src = "{{poke.img}}"></img>
+
+  <div class = 'infoBox'>
+    <img ng-src ="{{poke.sprites.front_default}}"></img>
+    <div class = 'infoName'>
+      <div><span class = 'property'>Name:</span>{{poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}}</div>
+      <div><span class = 'property'>Height:</span>{{poke.height}} Inch</div>
+      <div><span class = 'property'>Weigth:</span>{{poke.weight}} lbs</div>
+      <span><span class = 'property'>Type:</span> {{poke.types[0].type.name.charAt(0).toUpperCase() + poke.types[0].type.name.slice(1)}}
+       {{poke.types[1].type.name.charAt(0).toUpperCase() + poke.types[1].type.name.slice(1)}}
+       {{poke.types[2].type.name.charAt(0).toUpperCase() + poke.types[2].type.name.slice(1)}} </span>
+    </div>
+  </div>
 </div>
-<button class = "previous"ng-disabled = 'poke.id === 1' ng-click = 'getPrev(poke.id)' ui-sref = 'info({id: poke.id -1})'>Previous</button>
-<button class = "next" ng-click = 'getNext(poke.id)' ui-sref = 'info({id: poke.id + 1})'>next</button>

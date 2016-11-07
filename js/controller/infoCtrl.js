@@ -21,9 +21,9 @@ angular.module('pokemonApp').controller('infoCtrl', function($scope, mainService
 
     });
   };
-  $scope.Prev = function(id) {
+  $scope.getPrev = function(id) {
     mainService.getNext(id).then(function(response) {
-      $scope.nexto = response;
+      
     });
   };
 

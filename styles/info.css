@@ -1,8 +1,14 @@
 .infoPage {
   display: inline-block;
-  heigth: 800px;
+  width: 100vw;
+
+  background-image: url('../img/infoBackground.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   text-align: center;
+  padding-bottom: 10px;
 
 }
 .dropdown_menu {
@@ -19,10 +25,27 @@
   display: block;
   border-radius: 20px;
   width: 200px;
-
 }
 .test {
-  height: 300px;
-  width: 200px;
+  heigth: 300px;
+  width: 300px;
+  display: inline-block;
+
 }
-.collapse
+.infoBox {
+  font-size: 30px;
+  border-radius: 30px;
+  width: 600px;
+  background-color: #30A7D7;
+  color: black;
+  display: inline-block;
+  position: relative;
+  bottom: -50px;
+  height 350px;
+}
+.property {
+  color: white;
+}
+.infoName{
+  text-align: left;
+}

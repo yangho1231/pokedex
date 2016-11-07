@@ -11,7 +11,7 @@ angular.module('pokemonApp').service('mainService', function($http) {
     var data = response.data.results;
     var pokemon = [];
     for(var i = 0; i < data.length; i++) {
-      if(i < 720) {
+      if(i < 20) {
         var name = data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1);
         var id = (i+1);
         pokemon.push({
@@ -148,15 +148,15 @@ this.gen4 = function() {
       return $http({
       method: 'GET',
       url: 'http://pokeapi.co/api/v2/pokemon/' + id.toLowerCase() + '/'
-    }).then(function(response) {
+    }).then(function(response) {console.log(response);
       var newResponse = [];
+      var str = response.data.id.toString();
+      var ans = ('000'+str).substring(str.length);
       var data = response.data;
-
-      data.img = 'http://www.serebii.net/art/th/' + data.id + '.png';
+      // data.img = 'http://www.serebii.net/art/th/' + data.id + '.png';
+      data.img = 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png';
       newResponse.push(data);
-
       return newResponse[0];
-
     });
   };
 
