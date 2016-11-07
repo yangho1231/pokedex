@@ -39,7 +39,7 @@ this.gen1 = function() {
     method: 'GET',
     url: 'https://pokeapi.co/api/v2/pokemon/?limit=151'
   }).then(function(response) {
-  console.log(response);
+  // console.log(response);
 
   var data = response.data.results;
   var pokemon = [];
@@ -70,7 +70,7 @@ this.gen2 = function() {
     method: 'GET',
     url: 'https://pokeapi.co/api/v2/pokemon/?limit=100&offset=151'
   }).then(function(response) {
-  console.log(response);
+  // console.log(response);
 
   var data = response.data.results;
   var pokemon = [];
@@ -99,7 +99,7 @@ this.gen3 = function() {
     method: 'GET',
     url: 'https://pokeapi.co/api/v2/pokemon/?limit=135&offset=251'
   }).then(function(response) {
-  console.log(response);
+  // console.log(response);
 
   var data = response.data.results;
   var pokemon = [];
@@ -129,7 +129,7 @@ this.gen4 = function() {
     method: 'GET',
     url: 'https://pokeapi.co/api/v2/pokemon/?limit=107&offset=386'
   }).then(function(response) {
-  console.log(response);
+  // console.log(response);
 
   var data = response.data.results;
   var pokemon = [];
@@ -158,7 +158,7 @@ this.gen5 = function() {
     method: 'GET',
     url: 'https://pokeapi.co/api/v2/pokemon/?limit=156&offset=493'
   }).then(function(response) {
-  console.log(response);
+  // console.log(response);
 
   var data = response.data.results;
   var pokemon = [];
@@ -187,7 +187,7 @@ this.gen6 = function() {
     method: 'GET',
     url: 'http://pokeapi.co/api/v2/pokemon/?limit=71&offset=649'
   }).then(function(response) {
-  console.log(response);
+  // console.log(response);
 
   var data = response.data.results;
   var pokemon = [];
@@ -245,7 +245,7 @@ this.getNextName = function() {
     method: 'GET',
     url: 'https://pokeapi.co/api/v2/pokemon/' + id
   }).then(function(response) {
-    console.log(response);
+    // console.log(response);
     var data = response;
     // var nextPokemon = [];
     // //

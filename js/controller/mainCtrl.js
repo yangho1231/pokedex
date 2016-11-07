@@ -1,7 +1,7 @@
 angular.module('pokemonApp').controller('mainCtrl', function($scope, mainService, $stateParams, $state, $route, $anchorScroll, $location) {
   $scope.getUsers = function() {
     mainService.getData().then(function(response) {
-      console.log(response);
+      // console.log(response);
       $scope.pokemon = response;
     });
   };

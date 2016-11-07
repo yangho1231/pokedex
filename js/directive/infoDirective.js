@@ -1,7 +1,8 @@
 angular.module('pokemonApp').directive('infoDirective', function() {
   return {
     restrict: 'EA',
-    templateUrl: '../../views/info.html',
+    templateUrl: 'https://raw.githubusercontent.com/yangho1231/pokedex/gh-page/views/info.html',
+    // ../../views/info.html;
     link: function(scope, element, attributes) {
       //   element.on('click', function() {
       //     console.log($('.infoBox').height());
