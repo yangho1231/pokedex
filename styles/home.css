@@ -1,4 +1,5 @@
 body { padding-bottom: 70px; }
+
 section.home-main {
   margin-left: 20%;
   margin-right: 20%;
@@ -6,27 +7,26 @@ section.home-main {
   display: inline-block;
   position: relative;
   text-align: center;
-
-
 }
+
 .home-intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .search-box {
-
-  position: absolute;
+  
   margin-top: 10px;
-
 }
 
 input.search-box {
   border-radius: 20px;
   width: 250px;
 }
+
 .wrapper {
-  background-color: grey;
+  background-color: #F2F2F2;
   height: 200px;
   width: 300px;
   margin-top: 100px;

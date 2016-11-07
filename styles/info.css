@@ -1,7 +1,9 @@
+.bo {
+  margin: 0;
+}
 .infoPage {
   display: inline-block;
   width: 100vw;
-
   background-image: url('../img/infoBackground.png');
   background-position: center;
   background-size: cover;

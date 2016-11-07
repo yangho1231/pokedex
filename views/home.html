@@ -3,15 +3,23 @@
 
   </div>
 
-  <ui-view class = 'home-right'>
+  <input class = 'search-box' ng-model = 'filterName.name' placeholder="Type Here"></input>
+  <select ng-model = 'sortBy'>
+    <option>------------</option>
+    <option value = 'name'>A-Z</option>
+    <option value = '-name'>Z-A</option>
+    <option value = 'id'>Lowest Number</option>
+    <option value = '-id'>Highest Number</option>
+
+
+  </select>
     <section class = 'home-intro'>
-<div class = 'search-box'>
-
-    <input class = 'search-box' ng-model = 'filterName' placeholder="Type Here"></input>
 
 
-</div>
-      <div  ng-repeat = 'data in pokemon'>
+
+
+
+      <div  ng-repeat = "data in pokemon | filter: filterName | orderBy: sortBy">
 
 
         <div ui-sref ='info({id: data.name})' ng-click="getIndividual($index + 1)">
@@ -20,12 +28,12 @@
           <img class = 'img-list' ng-src = '{{data.img}}'></img>
           </div>
           <div>{{data.name}}</div>
-          <div>{{data.id}}</div>
+          <div>#{{data.id}}</div>
 
         </div>
 
       </div>
     </section>
-  </ui-view>
+
 
 <!-- $index + 1 -->

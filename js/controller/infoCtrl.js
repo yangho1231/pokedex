@@ -16,17 +16,25 @@ angular.module('pokemonApp').controller('infoCtrl', function($scope, mainService
 
   // console.log("stateparams", $stateParams);
 
-  $scope.getNext = function(id) {
-    mainService.getNext(id).then(function(response) {
+  // $scope.getNext = function(id) {
+  //   mainService.getNext(id).then(function(response) {
+  //
+  //   });
+  // };
+  // $scope.getPrev = function(id) {
+  //   mainService.getNext(id).then(function(response) {
+  //
+  //   });
+  // };
+  $scope.getNextName = function() {
+    mainService.getNextName().then(function(response) {
+      $scope.nex = response;
+      console.log(response);
+      $state.go('info');
 
     });
   };
-  $scope.getPrev = function(id) {
-    mainService.getNext(id).then(function(response) {
-      
-    });
-  };
-
+  $scope.getNextName();
   $scope.getIndividual($stateParams.id);
 
 });
