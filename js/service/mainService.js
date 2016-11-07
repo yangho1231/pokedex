@@ -185,7 +185,7 @@ this.gen5 = function() {
 this.gen6 = function() {
   return $http({
     method: 'GET',
-    url: 'http://pokeapi.co/api/v2/pokemon/?limit=71&offset=649'
+    url: 'https://pokeapi.co/api/v2/pokemon/?limit=71&offset=649'
   }).then(function(response) {
   // console.log(response);
 
