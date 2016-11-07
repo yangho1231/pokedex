@@ -20,8 +20,8 @@ angular.module('pokemonApp').service('mainService', function($http) {
         pokemon.push({
           name: name,
             id:  id,
-            img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
-            url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/',
+            img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
+            url: 'https://pokeapi.co/api/v2/pokemon/' + id + '/',
 
           });
 
@@ -55,7 +55,7 @@ this.gen1 = function() {
       pokemon.push({
         name: name,
           id: id,
-          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
+          img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'https://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -85,7 +85,7 @@ this.gen2 = function() {
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
+          img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'https://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -114,7 +114,7 @@ this.gen3 = function() {
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
+          img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'https://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -144,7 +144,7 @@ this.gen4 = function() {
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
+          img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'https://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -173,7 +173,7 @@ this.gen5 = function() {
       pokemon.push({
         name: name,
           id: id,
-          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
+          img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
           url: 'https://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
@@ -202,8 +202,8 @@ this.gen6 = function() {
       pokemon.push({
         name: name,
           id:  id,
-          img: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
-          url: 'http://pokeapi.co/api/v2/pokemon/' + id + '/'
+          img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png',
+          url: 'https://pokeapi.co/api/v2/pokemon/' + id + '/'
         });
     }
   }
@@ -217,7 +217,7 @@ this.getIndividual = function(id) {
     // console.log(parseInt(id));
       return $http({
       method: 'GET',
-      url: 'http://pokeapi.co/api/v2/pokemon/' + id.toLowerCase() + '/'
+      url: 'https://pokeapi.co/api/v2/pokemon/' + id.toLowerCase() + '/'
     }).then(function(response) {console.log(response);
       var newResponse = [];
       var str = response.data.id.toString();
@@ -225,7 +225,7 @@ this.getIndividual = function(id) {
       var data = response.data;
       var idPlus = id++;
       // data.img = 'http://www.serebii.net/art/th/' + data.id + '.png';
-      data.img = 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png';
+      data.img = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png';
       // data.url = function(){
       //
       //       return $http({
@@ -243,7 +243,7 @@ this.getNextName = function() {
   var id = 1;
   return $http({
     method: 'GET',
-    url: 'http://pokeapi.co/api/v2/pokemon/' + id
+    url: 'https://pokeapi.co/api/v2/pokemon/' + id
   }).then(function(response) {
     console.log(response);
     var data = response;
