@@ -5,15 +5,10 @@ angular.module('pokemonApp').controller('mainCtrl', function($scope, mainService
       $scope.pokemon = response;
     });
   };
-  $scope.reloadRoute = function(id) {
-      // console.log('hit');
-      if($state.current.name === 'home') {
-        $location.hash(id);
-        $anchorScroll();
-      }
-      else {
-        $state.go('home');
-      }
+
+  $scope.scrollTo = function(id) {
+    $location.hash(id);
+    $anchorScroll();
   };
 
   $scope.getUsers();
