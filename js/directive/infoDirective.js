@@ -14,11 +14,11 @@ angular.module('pokemonApp').directive('infoDirective', function() {
       //   }
       // });
         $('.infoBox').on('mouseenter', function() {
-          $('.infoBox').animate({height: '500px'});
+          $('.infoBox').animate({height: '400px', width: '700px'});
         });
 
         $('.infoBox').on('mouseleave', function() {
-          $('.infoBox').animate({height: '300px'});
+          $('.infoBox').animate({height: '300px', width: '600px'});
         });
     }
   };
