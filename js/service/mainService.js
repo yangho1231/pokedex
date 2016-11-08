@@ -7,7 +7,7 @@ angular.module('pokemonApp').service('mainService', function($http) {
       method: 'GET',
       url: 'https://pokeapi.co/api/v2/pokemon/?limit=720'
   }).then(function(response) {
-    // console.log(pokemon);
+    console.log(response);
     var data = response.data.results;
     var pokemon = [];
     for(var i = 0; i < data.length; i++) {
@@ -223,6 +223,7 @@ this.getIndividual = function(id) {
       var str = response.data.id.toString();
       var ans = ('000'+str).substring(str.length);
       var data = response.data;
+      console.log(response);
       var idPlus = id++;
       // data.img = 'http://www.serebii.net/art/th/' + data.id + '.png';
       data.img = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'  + ans +'.png';
