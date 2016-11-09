@@ -56,7 +56,11 @@
   width: 600px;
   background-color: #30A7D7;
   color: black;
-  height 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+
 
 }
 
@@ -75,19 +79,27 @@
   }
 }
 .property {
-  color: white;
+  /*color: white;
   background-color: black;
-  border-radius: 10px;
+  /*border-radius: 10px;
   float: left;
   margin-right: 38px;
-  margin-left: 39px;
-}
-.infoName{
-
+  margin-left: 39px;*/*/
 }
 .value {
-  border-radius: 10px;
+  /*border-radius: 10px;
   background-color: white;
-
-
+  /*float: right;*/*/
+}
+.propName {
+  background-color: #E3350D;
+  color: white;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+.valueInside {
+  background-color: #1B53BA;
+  color: #FFCB05;
+  margin-top: 15px;
+  border-radius: 20px;
 }

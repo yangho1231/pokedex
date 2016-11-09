@@ -26,7 +26,19 @@ input.search-box {
   border-radius: 20px;
   width: 250px;
 }
-
+#pokeName {
+  border-radius: 20px;
+  background-color: #2D70B7;
+  width: 220px;
+  margin: auto;
+  color: white;
+}
+#pokeId {
+  background-color: #FFCB05;
+  border-radius: 20px;
+  width: 220px;
+  margin: auto;
+}
 .wrapper {
   background-color: #F2F2F2;
   height: 200px;
